@@ -1,0 +1,19 @@
+{
+  "name": "example-app",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "dev:clean": "npm run dev -- --no-cache"
+  },
+  "author": "",
+  "license": "UNLICENCED",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@mow/react": "^0.0.0"
+  }
+}

@@ -1,7 +1,10 @@
 {
   "extends": "../../base-tsconfig.json",
   "compilerOptions": {
-    "module": "system",
-    "outFile": "./dist/mow-react.js"
-  }
+    "module": "commonjs",
+    "target": "es2015",
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"]
 }

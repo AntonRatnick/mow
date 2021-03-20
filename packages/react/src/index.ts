@@ -1,1 +1,2 @@
-export { createElement } from './create-element'
+import { createElement } from './create-element'
+export const h = createElement

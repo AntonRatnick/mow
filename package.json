@@ -1,5 +1,5 @@
 {
-  "name": "@mow",
+  "name": "root",
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
@@ -10,6 +10,10 @@
     "pretty-quick": "^3.1.0"
   },
   "scripts": {
+    "lerna": "lerna run",
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap",
+    "link": "lerna link",
     "prepare": "husky install"
   }
 }
