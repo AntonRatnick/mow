@@ -1,5 +1,9 @@
-import { h } from '@mow/react'
+import { h, render } from '@mow/react'
 
-const Application = () => <div>Hello world</div>
+const Application = <div>
+  <h1>Hello world</h1>
+  <div>Div With other content</div>
+</div>
+const container = document.getElementById('app')
 
-console.log(<Application />)
+render(container)(Application)
