@@ -1,5 +1,7 @@
 {
   "extends": "../../base-tsconfig.json",
-  "compilerOptions": {},
-  "include": ["src/**/*"]
+  "compilerOptions": {
+    "module": "amd",
+    "outFile": "./dist/mow-react.js"
+  }
 }
