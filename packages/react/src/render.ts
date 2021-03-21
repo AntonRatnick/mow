@@ -1,25 +1,34 @@
 type MOWRectElement = {
   type: string
-  props: {
-    children: MOWRectElement[]
-    nodeValue: string
-  }
+  props: Record<string, string>
+  children: MOWRectElement[]
 }
+const renderTextNode = (value: string) => document.createTextNode(value)
 
-export const render = (container: HTMLElement) => (
-  element: MOWRectElement,
-): void => {
-  const {
-    type,
-    props: { children, nodeValue },
-  } = element
-
-  if (type === 'TEXT_ELEMENT') {
-    container.appendChild(document.createTextNode(nodeValue))
-    return
-  }
-
+const renderNode = (
+  type: string,
+  props: Record<string, string> = {},
+  children: MOWRectElement[],
+) => {
   const node = document.createElement(type)
+
+  Object.keys(props).forEach(propKey => {
+    node.setAttribute(propKey, props[propKey])
+  })
+
   children.forEach(render(node))
-  container.appendChild(node)
+
+  console.log(node, 'some')
+  return node
 }
+
+export const render = (container: HTMLElement) => ({
+  type,
+  props,
+  children,
+}: MOWRectElement): Node =>
+  container.appendChild(
+    type === 'TEXT_ELEMENT'
+      ? renderTextNode(props.nodeValue)
+      : renderNode(type, props, children),
+  )

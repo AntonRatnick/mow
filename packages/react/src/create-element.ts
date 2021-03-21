@@ -10,10 +10,8 @@ export const createElement = (
   ...children: unknown[]
 ): unknown => ({
   type,
-  props: {
-    ...props,
-    children: children.map(child =>
-      isTextChild(child) ? createTextElement(child) : child,
-    ),
-  },
+  props: props || {},
+  children: children.map(child =>
+    isTextChild(child) ? createTextElement(child) : child,
+  ),
 })
