@@ -1,0 +1,10 @@
+{
+  "name": "@mow/data-structures",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "ratnick"
+}

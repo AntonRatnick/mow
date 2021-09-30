@@ -1,4 +1,4 @@
 {
-  "packages": ["packages/*", "./example-app"],
+  "packages": ["./libs/*", "./example-app", "./data-structures"],
   "version": "0.0.0"
 }
