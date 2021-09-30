@@ -1,4 +1,4 @@
-# MOW - my own world (with orcs and trolls)
+# MOW - here I create my own world (with orcs and trolls) using TypeScript
 
-## In this repository I am going to implement modern technologies for study purpose
+## In this repository I am going to implement libs / data structures / algorithms for study purpose
 
