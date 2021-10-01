@@ -12,6 +12,7 @@ nbproject
 .~lock.*
 .buildpath
 .idea
+.run
 .project
 .settings
 .vscode
