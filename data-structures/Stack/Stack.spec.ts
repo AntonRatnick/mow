@@ -1,7 +1,7 @@
 import { Stack } from './Stack'
 
-describe('Stack', () => {
-  it('should add element on top of the stack with push method', () => {
+describe('Stack<T>', () => {
+  it('.push(el) should add (element: T) on top of the stack', () => {
     const stack = new Stack()
     stack.push(1)
     expect(stack.size()).toBe(1)
@@ -9,7 +9,7 @@ describe('Stack', () => {
     expect(stack.size()).toBe(2)
   })
 
-  it('should remove element from top of the stack and return it with pop method', () => {
+  it('.pop() should remove (element: T) from top of the stack and return it', () => {
     const stack = new Stack()
     stack.push(1)
     stack.push(2)
@@ -17,7 +17,7 @@ describe('Stack', () => {
     expect(stack.pop()).toBe(1)
   })
 
-  it('should return element from top of the stack with peek method', () => {
+  it('.peek() should return (element: T) from top of the stack', () => {
     const stack = new Stack()
     stack.push(1)
     stack.push(2)
@@ -27,7 +27,7 @@ describe('Stack', () => {
     expect(stack.peek()).toBe(1)
   })
 
-  it('should return size of the stack with size method', () => {
+  it('.size() should return (size: number) of the stack', () => {
     const stack = new Stack()
     stack.push(1)
     expect(stack.size()).toBe(1)
@@ -37,7 +37,7 @@ describe('Stack', () => {
     expect(stack.size()).toBe(1)
   })
 
-  it('should return size of the stack with size method', () => {
+  it('.isEmpty() should return (isEmpty: boolean), true if empty collection', () => {
     const stack = new Stack()
     expect(stack.isEmpty()).toBeTruthy()
     stack.push(1)

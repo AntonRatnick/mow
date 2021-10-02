@@ -24,3 +24,4 @@ composer.lock
 # Project Specific
 /node_modules
 .env
+**/coverage/
