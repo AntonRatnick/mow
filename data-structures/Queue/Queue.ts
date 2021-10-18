@@ -7,14 +7,14 @@ interface IQueue<T> {
   isEmpty: () => boolean
 }
 
-class Queue<T> implements IQueue<T> {
-  private collection = []
+export class Queue<T> implements IQueue<T> {
+  private collection: T[] = []
 
-  public print() {
+  public print(): void {
     console.log(this.collection[0])
   }
 
-  public enqueue(el: T) {
+  public enqueue(el: T): void {
     this.collection.push(el)
   }
 
@@ -22,15 +22,15 @@ class Queue<T> implements IQueue<T> {
     return this.collection.shift()
   }
 
-  public front() {
+  public front(): T {
     return this.collection[0]
   }
 
-  public size() {
+  public size(): number {
     return this.collection.length
   }
 
-  public isEmpty() {
+  public isEmpty(): boolean {
     return this.collection.length === 0
   }
 }
