@@ -2,7 +2,7 @@ interface IQueue<T> {
   print: () => void
   enqueue: (el: T) => void
   dequeue: () => T | void
-  front: () => T
+  front: () => T | void
   size: () => number
   isEmpty: () => boolean
 }
