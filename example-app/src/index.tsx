@@ -7,6 +7,7 @@ const Application = (
     <div>Div With other content</div>
   </div>
 )
+
 const container = document.getElementById('app')
 
 render(container)(Application)

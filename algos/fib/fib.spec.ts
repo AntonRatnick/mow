@@ -1,10 +1,6 @@
 import { fib } from './fib'
 
 describe('fib', () => {
-  afterEach(() => {
-    jest.clearAllMocks()
-  })
-
   it.each([
     [0, 0],
     [1, 1],
