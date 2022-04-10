@@ -28,4 +28,20 @@ export class BST<T> {
       return searchTree(node)
     }
   }
+
+  public findMin(): Nullable<Node<T>> {
+    let node: Nullable<Node<T>> = this.root
+    do {
+      node = node?.left ?? null
+    } while (node?.left)
+    return node
+  }
+
+  public findMax(): Nullable<Node<T>> {
+    let node: Nullable<Node<T>> = this.root
+    do {
+      node = node?.right ?? null
+    } while (node?.right)
+    return node
+  }
 }
