@@ -1,4 +1,8 @@
-# MOW - here I create my own world (with orcs and trolls) using TypeScript
+# MOW - my own world (with orcs and trolls)
 
-## In this repository I am going to implement libs / data structures / algorithms for study purpose
+In this repository I implement (for study purposes):
+
+- [libs](./libs)
+- [data structures](./data-structures)
+- [algorithms](./algos)
 
