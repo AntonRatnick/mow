@@ -28,6 +28,7 @@
   "workspaces": [
     "./libs/*",
     "./example-app",
-    "./data-structures"
+    "./data-structures",
+    "./patterns"
   ]
 }

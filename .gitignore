@@ -1,4 +1,5 @@
 .turbo
+.parcel-cache
 
 # OS Specific
 .DS_Store
