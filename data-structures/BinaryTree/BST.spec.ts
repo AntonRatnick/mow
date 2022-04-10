@@ -90,4 +90,23 @@ describe('BST', () => {
       expect(bst.findMax()).toBeNull()
     })
   })
+
+  describe('find', () => {
+    it('Should find node in the tree', () => {
+      const bst = new BST()
+      bst.add(3)
+      bst.add(1)
+      bst.add(180)
+      bst.add(-1)
+      bst.add(100)
+      bst.add(80)
+      bst.add(180)
+      expect(bst.find(180)).toEqual(new Node(180, new Node(100, new Node(80))))
+    })
+
+    it('Should return null for empty tree', () => {
+      const bst = new BST()
+      expect(bst.find(100)).toBeNull()
+    })
+  })
 })

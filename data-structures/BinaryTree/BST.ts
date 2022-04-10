@@ -44,4 +44,17 @@ export class BST<T> {
     } while (node?.right)
     return node
   }
+
+  public find(data: NonNullable<T>): Nullable<Node<T>> {
+    let node: Nullable<Node<T>> = this.root ?? null
+    do {
+      if (!node) return null
+      node = (data > node?.data ? node?.right : node?.left) ?? null
+    } while (node?.data !== data)
+    return node
+  }
+
+  public isPresent(data: NonNullable<T>): boolean {
+    return !!this.find(data)
+  }
 }
