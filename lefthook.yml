@@ -1,7 +1,11 @@
- pre-commit:
-   parallel: true
-   commands:
-     lint:
-       run: npm lint
-     test:
-       run: npm test
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: npm run lint
+    test:
+      run: npm test
+commit-msg:
+  commands:
+    lint:
+      run: npx --no -- commitlint --edit "$1"
