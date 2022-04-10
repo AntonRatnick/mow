@@ -2,7 +2,8 @@
   "name": "@mow/data-structures",
   "version": "0.0.0",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "eslint --fix ./**/*.ts"
   },
   "author": "ratnick"
 }

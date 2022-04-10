@@ -8,13 +8,6 @@
   },
   "keywords": [],
   "author": "ratnick",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "typescript": "^4.2.3"
-  },
   "publishConfig": {
     "directory": "dist"
   }
